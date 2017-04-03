@@ -1,0 +1,262 @@
+html {
+  font-size: 18px;
+  font-family: Helvetica;
+  background-color: white;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* Banner styling */
+header {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
+  background-size: cover;
+  background-position: center;
+  height: 30rem;
+  padding-top: 1rem;
+}
+
+.header {
+  background-color: cadetblue;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+.logo span {
+  font-size: 1rem;
+  color: white;
+}
+
+nav .desktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .phone {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav span {
+  color: white;
+  margin-left: 2rem;
+}
+
+.slogan {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.slogan-text {
+  background-color: white;
+  margin-top: 10rem;
+  margin-right: -2rem;
+  padding: 1.5rem 5rem;
+  display: inline-block;
+}
+
+.slogan span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Services styling */
+.services {
+  display: flex;
+  justify-content: center;
+}
+
+.service {
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  width: 5rem;
+  height: 8rem;
+}
+
+.service .image {
+  width: 5rem;
+  height: 5rem;
+}
+
+.service img {
+  margin-bottom: 1rem;
+  max-width: 5rem;
+  max-height: 5rem;
+}
+
+.paper {
+  width: 3.5rem;
+}
+
+/* Information styling */
+.information .container {
+  display: flex;
+}
+
+.philosophy, .appointments {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  margin-right: 5%;
+}
+
+.title {
+  width: 10rem;
+  background-color: cadetblue;
+  padding: 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.title span {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Footer styling */
+footer .container{
+  background-color: azure;
+  padding: 4rem 3rem;
+}
+
+.logo2 img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+footer span {
+  color: black;
+}
+
+/* Media queries */
+@media only screen and (min-width: 470px) {
+  .phone {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+
+  header {
+    padding-top: 0;
+    height: 22rem;
+  }
+
+  .slogan-text {
+    margin-top: 5rem;
+    margin-right:2rem;
+    padding: 0.75rem 4rem;
+  }
+
+  .slogan span {
+    font-size: 1.33rem;
+  }
+
+  .information .container {
+    padding-left: 3rem;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .desktop {
+    display: none;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  header {
+    padding-top: 0;
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  .slogan {
+    width: 100%;
+    display: block;
+  }
+
+  .slogan-text {
+    margin-top: 9rem;
+    padding: 1rem;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .slogan span {
+    font-size: 1rem;
+  }
+
+  .services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3.77rem;
+  }
+
+  .service {
+    margin: 1.54rem;
+    width: 3.77rem;
+    height: 5rem;
+  }
+
+  .service img {
+    max-height: 3.77rem;
+    max-width: 3.77rem;
+  }
+
+  .description {
+    font-size: 0.77rem;
+    font-weight: normal;
+  }
+
+  .information .container {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .philosophy, .appointments {
+    width: 100%;
+    margin: 0 0 4rem 0;
+  }
+
+  .title {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  footer .container {
+    display: flex;
+    justify-content: center;
+    margin-right: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
